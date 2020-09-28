@@ -18,6 +18,8 @@
 import index from "./views/index.vue";
 
 export default {
+
+  
   name: "App",
   components: {
     index,
