@@ -5,7 +5,13 @@
       <hr class="my-2" />
       <p><img src="../assets/timg.jpg" /></p>
       <p class="lead">
-        <a class="btn btn-primary btn-lg" style="width:200px" href="/wfood" role="button">返回</a>
+        <a
+          class="btn btn-primary btn-lg"
+          style="width: 200px"
+          href="/wfood"
+          role="button"
+          >返回</a
+        >
       </p>
     </div>
   </div>

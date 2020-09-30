@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="/cfood">中餐</a>
+              <a class="nav-link" href="/foot">中餐</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/wfood">西餐</a>
@@ -35,9 +35,17 @@
               <a class="nav-link" href="/cart">购物车</a>
             </li>
           </ul>
+
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link padding-right:0">{{
+                $store.state.activeUser.name
+              }}</a>
+            </li>
+            <a class="nav-link" href="/" style="padding-left: 0">注销</a>
+          </ul>
         </div>
       </nav>
-
       <div class="row">
         <div class="col-12">
           <router-view />
@@ -53,7 +61,9 @@ export default {
   data() {
     return {};
   },
-  computed: {},
+  computed: {
+
+  },
   created() {},
   mounted() {},
   watch: {},

@@ -9,7 +9,7 @@ import cfood from '../views/cfood.vue'
 import drink from '../views/drink.vue'
 import dessert from '../views/dessert.vue'
 import cart from '../views/cart.vue'
-import order from '../views/order.vue'
+import order from '../views/pay.vue'
 import success from '../views/success.vue'
 
 Vue.use(VueRouter)
@@ -24,7 +24,7 @@ const routes = [
     component: register
   },
   {
-    path: '/order',
+    path: '/pay',
     component: order,
   },
   {
@@ -36,7 +36,7 @@ const routes = [
         component: wfood
       },
       {
-        path: '/cfood',
+        path: '/foot',
         component: cfood
       },
       {
@@ -57,9 +57,6 @@ const routes = [
       },
     ],
   },
-
-
-
 ]
 
 const router = new VueRouter({

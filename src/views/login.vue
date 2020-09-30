@@ -60,7 +60,7 @@
 
 
 <script>
-import { mapState } from "vuex";
+import { mapState, mapActions } from "vuex";
 export default {
   props: {},
   data() {
@@ -71,18 +71,19 @@ export default {
     };
   },
   computed: {
-    ...mapState(["user"]),
+    ...mapState(["user", "activeUser"]),
   },
   created() {},
   mounted() {},
   watch: {},
   methods: {
+    ...mapActions(["activeU"]),
     login: function () {
       this.user.forEach((v) => {
-        console.log(this.user);
         if (v.username == this.username) {
           if (v.pwd == this.pwd) {
             this.$router.push("/foot");
+            this.activeU(v);
             this.flag = false;
           }
         } else this.flag = true;
