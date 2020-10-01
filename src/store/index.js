@@ -128,10 +128,19 @@ export default new Vuex.Store({
 
     ],
     activeUser: '',
+    orders: [
+
+    ],
+    result: 0,
   },
   mutations: {
     create(state, obj) {
-      console.log(obj);
+      for (const v of state.carts) {
+        if (v.good.name == obj.good.name) {
+          v.count++;
+          return;
+        }
+      }
       state.carts.push(obj);
     },
     acUser(state, user) {

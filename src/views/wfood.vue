@@ -38,7 +38,7 @@ export default {
   mounted() {},
   watch: {},
   methods: {
-    ...mapActions(["createAction", "carts"]),
+    ...mapActions(["createAction"]),
     save: function (name) {
       this.goods.forEach((v) => {
         if (v.name == name) {

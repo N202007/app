@@ -34,6 +34,9 @@
             <li class="nav-item">
               <a class="nav-link" href="/cart">购物车</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/order">订单</a>
+            </li>
           </ul>
 
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -61,9 +64,7 @@ export default {
   data() {
     return {};
   },
-  computed: {
-
-  },
+  computed: {},
   created() {},
   mounted() {},
   watch: {},

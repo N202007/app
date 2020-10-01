@@ -9,12 +9,18 @@ import cfood from '../views/cfood.vue'
 import drink from '../views/drink.vue'
 import dessert from '../views/dessert.vue'
 import cart from '../views/cart.vue'
-import order from '../views/pay.vue'
+import pay from '../views/pay.vue'
 import success from '../views/success.vue'
+import wait from '../views/wait.vue'
+import order from '../views/order.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/order',
+    component: order,
+  },
   {
     path: '/',
     component: login,
@@ -25,7 +31,7 @@ const routes = [
   },
   {
     path: '/pay',
-    component: order,
+    component: pay,
   },
   {
     path: '/foot',
@@ -51,12 +57,17 @@ const routes = [
         path: '/cart',
         component: cart
       },
-      {
-        path: '/success',
-        component: success
-      },
     ],
   },
+  {
+    path: '/success',
+    component: success
+  },
+  {
+    path: '/wait',
+    component: wait
+  }
+
 ]
 
 const router = new VueRouter({

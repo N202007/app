@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div class="jumbotron text-center">
       <h1 class="display-3">支付成功</h1>
       <hr class="my-2" />
