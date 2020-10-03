@@ -13,16 +13,24 @@ import pay from '../views/pay.vue'
 import success from '../views/success.vue'
 import wait from '../views/wait.vue'
 import order from '../views/order.vue'
+import Index from "@/views/Index"
 
 Vue.use(VueRouter)
 
 const routes = [
+  /**主页路由*/
+  {
+    path: '/',
+    name: "index",
+    component: Index
+  }
+  ,
   {
     path: '/order',
     component: order,
   },
   {
-    path: '/',
+    path: '/app',
     component: login,
   },
   {

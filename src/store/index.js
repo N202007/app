@@ -1,6 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import group1 from "@/modules/group1";
+import slogan from "@/modules/slogan";
+import group2 from "@/modules/group2";
+import statement from "@/modules/statement";
+import allProvince from "@/modules/allProvince";
+import showStatus from "@/modules/showStatus";
+import manualCustomerService from "@/modules/manualCustomerService";
+import autoImage from "@/modules/aotuImage";
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -132,6 +139,22 @@ export default new Vuex.Store({
 
     ],
     result: 0,
+    /**美食鉴赏1**/
+    group1,
+    /**标语**/
+    slogan,
+    /**美食鉴赏二**/
+    group2,
+    /**声明**/
+    statement,
+    /**全国省份**/
+    allProvince,
+    /**二维码显示状态**/
+    showStatus,
+    /***客服数据**/
+    manualCustomerService,
+    /***自动滚动图片**/
+    autoImage,
   },
   mutations: {
     create(state, obj) {
