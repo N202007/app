@@ -76,7 +76,7 @@ export default {
   methods: {
     submit: function () {
       this.user.push(this.u);
-      this.$router.push("/");
+      this.$router.push("/app");
       this.u = null;
     },
   },
